@@ -1,0 +1,23 @@
+{
+  "name": "electron-todo",
+  "version": "0.1.0",
+  "description": "A simple educational todo app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/CodeDraken/electron-todo",
+  "keywords": [
+    "Electron",
+    "tutorial",
+    "demo"
+  ],
+  "author": "CodeDraken",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "electron": "^3.0.4"
+  }
+}
