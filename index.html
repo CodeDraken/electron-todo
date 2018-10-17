@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>Electron Todo</title>
-    <style>
-      body {
-        font: caption;
-      }
-    </style>
+    <link rel="stylesheet" href="./node_modules/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Todo App</h1>
+    <div class="container">
+      <div class="columns">
+        <div class="column col-10">
+          <h1 class="text-center">Todos</h1>
+          <ul>
+            <li class="todo-item">Todo</li>
+            <li class="todo-item">Todo</li>
+            <li class="todo-item">Todo</li>
+            <li class="todo-item">Todo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <script>
       require('./renderer.js')
