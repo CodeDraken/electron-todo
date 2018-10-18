@@ -16,7 +16,7 @@ class Window extends BrowserWindow {
 
     // load the html and open devtools
     this.loadFile(file)
-    this.webContents.openDevTools()
+    // this.webContents.openDevTools()
 
     // gracefully show when ready to prevent flickering
     this.once('ready-to-show', () => {
