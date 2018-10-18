@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Electron Todo</title>
-    <link rel="stylesheet" href="../node_modules/spectre.css/dist/spectre.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="columns">
-        <div class="column col-10">
-          <h1 class="text-center">Todos</h1>
-          <ul>
-            <li class="todo-item">Todo</li>
-            <li class="todo-item">Todo</li>
-            <li class="todo-item">Todo</li>
-            <li class="todo-item">Todo</li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Electron Todo</title>
+  <link rel="stylesheet" href="../node_modules/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column col-10">
+        <h1 class="text-center">Todos</h1>
+        <button id="createTodoBtn" type="button" class="btn">Create a New Todo</button>
+        <ul id="todoList"></ul>
       </div>
     </div>
+  </div>
 
-    <script>
-      require('./renderer.js')
-    </script>
-  </body>
+  <script src="./index.js"></script>
+</body>
+
 </html>

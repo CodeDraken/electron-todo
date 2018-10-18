@@ -1,3 +1,4 @@
+'use strict'
 
 const Store = require('electron-store')
 
@@ -13,6 +14,7 @@ class DataStore extends Store {
     // save todos to JSON file
     this.set('todos', this.todos)
 
+    // returning 'this' allows method chaining
     return this
   }
 
