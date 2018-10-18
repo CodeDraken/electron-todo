@@ -11,4 +11,7 @@ document.getElementById('todoForm').addEventListener('submit', (evt) => {
 
   // send todo to main process
   ipcRenderer.send('add-todo', input.value)
+
+  // reset input
+  input.value = ''
 })
